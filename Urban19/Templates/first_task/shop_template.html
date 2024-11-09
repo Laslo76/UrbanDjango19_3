@@ -1,0 +1,16 @@
+{% extends "./menu.html" %}
+
+{% block pagename %}
+    <H1>Магазин игр</H1>
+{% endblock pagename %}
+
+{% block content %}
+    <ul>
+        {% for i in products %}
+            <li>{{ i.name }} | {{i.description}}. Стоимость: {{i.cost}} <button>Купить</button></li>
+        {% endfor %}
+    </ul>
+    <form action="/main">
+        <button>На главную</button>
+    </form>
+{% endblock content %}

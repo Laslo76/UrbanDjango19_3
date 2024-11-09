@@ -1,0 +1,12 @@
+{% extends "./menu.html" %}
+
+{% block pagename %}
+    <H1>Ваша корзина в магазин рыболовных принадлежностей</H1>
+{% endblock pagename %}
+
+{% block content %}
+<h2>Извините, Ваша корзина пуста!</h2>
+<form action="/main">
+    <button>На главную</button>
+</form>
+{% endblock content %}
